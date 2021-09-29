@@ -99,6 +99,15 @@ class Taxi
 
         return $this;
     }
+
+    public function Display()
+    {
+        echo("<b>1 объект:</b> " . get_class($this) .
+        "<br>Двери: " . $this->getDoors() .
+        "<br>Места: " . $this->getSeats() .
+        "<br>Окна: " . $this->getWindows() .
+        "<br><br>");
+    }
 }
 
 

@@ -95,6 +95,15 @@ class CoffeeGrinder
 
         return $this;
     }
+
+    public function Display()
+    {
+        echo("<b>2 объект:</b> " . get_class($this) .
+            "<br>Тип: " . $this->getType() .
+            "<br>Модель: " . $this->getModel() .
+            "<br>Потребление энергии: " . $this->getEnergyСonsumption() .
+            "<br><br>");
+    }
 }
 
 ?>

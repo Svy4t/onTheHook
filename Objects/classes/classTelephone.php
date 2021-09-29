@@ -137,6 +137,17 @@ class Telephone
 
         return $this;
     }
+
+    public function Display()
+    {
+        echo("<b>4 объект:</b> " . get_class($this) .
+        "<br>Тип: " . $this->getType() .
+        "<br>Модель: " . $this->getModel() .
+        "<br>Вес: " . $this->getWeight() .
+        "<br>Цвет: " . $this->getColor() .
+        "<br>Экран: " . $this->getScreen() .
+        "<br><br>");
+    }
 }
 
 ?>

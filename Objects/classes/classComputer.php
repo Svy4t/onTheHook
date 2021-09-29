@@ -133,6 +133,17 @@ class Computer
 
         return $this;
     }
+
+    public function Display()
+    {
+        echo("<b>3 объект:</b> " . get_class($this) .
+        "<br>Монитор: " . $this->getMonitor() .
+        "<br>Корпус: " . $this->getSystemBlock() .
+        "<br>Клавиатура: " . $this->getKeyboard() .
+        "<br>Мышь: " . $this->getMouse() .
+        "<br>Наушники: " . $this->getHeadphones() .
+        "<br><br>");
+    }
 }
 
 ?>

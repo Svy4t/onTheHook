@@ -112,6 +112,16 @@ class Keyboard
 
         return $this;
     }
+
+    public function Display()
+    {
+        echo("<b>9 объект:</b> " . get_class($this) .
+        "<br>Модель: " . $this->getModel() .
+        "<br>Тип: " . $this->getType() .
+        "<br>Цвет: " . $this->getColor() .
+        "<br>Материал: " . $this->getMaterial() .
+        "<br><br>");
+    }
 }
 
 

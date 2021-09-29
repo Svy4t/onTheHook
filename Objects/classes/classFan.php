@@ -91,7 +91,15 @@ class Fan
 
         return $this;
     }
-}
 
+    public function Display()
+    {
+        echo("<b>10 объект:</b> " . get_class($this) .
+        "<br>Модель: " . $this->getModel() .
+        "<br>Тип: " . $this->getType() .
+        "<br>Материал: " . $this->getMaterial() .
+        "<br><br>");
+    }
+}
 
 ?>

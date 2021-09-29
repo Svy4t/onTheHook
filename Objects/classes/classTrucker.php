@@ -153,6 +153,17 @@ class Trucker
 
         return $this;
     }
+
+    public function Display()
+    {
+        echo("<b>7 объект:</b> " . get_class($this) .
+        "<br>Контракт: " . $this->getContract() . 
+        "<br>Компания: " . $this->getCompany() .
+        "<br>Трак: " . $this->getTruck() .
+        "<br>Имя: " . $this->getName() .
+        "<br>Фамилия: " . $this->getSurname() .
+        "<br><br>");
+    }
 }
 
 ?>

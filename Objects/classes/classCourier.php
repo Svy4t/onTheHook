@@ -149,6 +149,17 @@ class Courier
 
         return $this;
     }
+
+    public function Display()
+    {
+        echo("<b>6 объект:</b> " . get_class($this) .
+        "<br>Компания: " . $this->getCompany() .
+        "<br>Средство передвижения: " . $this->getMeansOfTransportation() .
+        "<br>Имя: " . $this->getName() .
+        "<br>Фамилия: " . $this->getSurname() .
+        "<br>Возраст: " . $this->getAge() .
+        "<br><br>");
+    }
 }
 
 ?>
