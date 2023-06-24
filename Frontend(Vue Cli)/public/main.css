@@ -1,0 +1,89 @@
+@font-face {
+  font-family: 'NotoSans';
+  src: local('NotoSansThin'),
+    url('/fonts/NotoSans-Thin.woff') format('woff'),
+    url('/fonts/NotoSans-Thin.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: local('NotoSansExtraLight'),
+    url('/fonts/NotoSans-ExtraLight.woff') format('woff'),
+    url('/fonts/NotoSans-ExtraLight.woff2') format('woff2');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: local('NotoSansLight'),
+    url('/fonts/NotoSans-Light.woff') format('woff'),
+    url('/fonts/NotoSans-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: local('NotoSansRegular'),
+    url('/fonts/NotoSans-Regular.woff') format('woff'),
+    url('/fonts/NotoSans-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: local('NotoSansMedium'),
+    url('/fonts/NotoSans-Medium.woff') format('woff'),
+    url('/fonts/NotoSans-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: local('NotoSansSemiBold'),
+    url('/fonts/NotoSans-SemiBold.woff') format('woff'),
+    url('/fonts/NotoSans-SemiBold.woff2') format('woff2');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: local('NotoSansBold'),
+    url('/fonts/NotoSans-Bold.woff') format('woff'),
+    url('/fonts/NotoSans-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: local('NotoSansExtraBold'),
+    url('/fonts/NotoSans-ExtraBold.woff') format('woff'),
+    url('/fonts/NotoSans-ExtraBold.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NotoSans';
+  src: local('NotoSansBlack'),
+    url('/fonts/NotoSans-Black.woff') format('woff'),
+    url('/fonts/NotoSans-Black.woff2') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

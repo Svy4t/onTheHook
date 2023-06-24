@@ -1,0 +1,67 @@
+<template>
+  <div class="tooltip">
+    <svg
+      class="tooltip__svg"
+      width="33"
+      height="33"
+      viewBox="0 0 33 33"
+      fill="#F5F7F9"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle
+        cx="16.5"
+        cy="16.5"
+        r="15.5"
+        fill="#F5F7F9"
+        stroke="#192A39"
+        stroke-width="2"
+      />
+      <path
+        d="M16.5 21C16.2033 21 15.9133 21.088 15.6666 21.2528C15.42 21.4176 15.2277 21.6519 15.1142 21.926C15.0006 22.2001 14.9709 22.5017 15.0288 22.7926C15.0867 23.0836 15.2296 23.3509 15.4393 23.5607C15.6491 23.7704 15.9164 23.9133 16.2074 23.9712C16.4983 24.0291 16.7999 23.9993 17.074 23.8858C17.3481 23.7723 17.5824 23.58 17.7472 23.3334C17.912 23.0867 18 22.7967 18 22.5C18 22.1022 17.842 21.7206 17.5607 21.4393C17.2794 21.158 16.8978 21 16.5 21ZM16.5 9C16.1022 9 15.7206 9.15804 15.4393 9.43934C15.158 9.72064 15 10.1022 15 10.5V18C15 18.3978 15.158 18.7794 15.4393 19.0607C15.7206 19.342 16.1022 19.5 16.5 19.5C16.8978 19.5 17.2794 19.342 17.5607 19.0607C17.842 18.7794 18 18.3978 18 18V10.5C18 10.1022 17.842 9.72064 17.5607 9.43934C17.2794 9.15804 16.8978 9 16.5 9Z"
+        fill="#F23535"
+      />
+    </svg>
+    <div class="tooltip__content">
+      {{ text }}
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  props: {
+    text: String,
+  },
+};
+</script>
+<style scoped>
+.tooltip {
+  width: fit-content;
+  max-width: 250px;
+  position: relative;
+  background-color: var(--blue);
+  padding: 5px 15px 5px 10px;
+  border-radius: 15px;
+  z-index: 1;
+}
+
+.tooltip::after {
+  content: url('@/assets/tooltip_tringle.svg');
+  position: absolute;
+  bottom: -10px;
+  left: 30px;
+}
+
+.tooltip__svg {
+  position: absolute;
+  top: -8px;
+  left: -7px;
+}
+
+.tooltip__content {
+  text-indent: 20px;
+  color: var(--white);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 130%;
+}
+</style>
